@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: london-tube-lines
+spec:
+  containers:
+  - name: london-tube-lines-container
+    image: ssbostan/london-tube-lines-frontend:latest
+    ports:
+    - containerPort: 80
