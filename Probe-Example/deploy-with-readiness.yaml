@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: telescope
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: telescope
+  template:
+    metadata:
+      labels:
+        app: telescope
+    spec:
+      containers:
+      - name: telescope
+        image: ssbostan/telescope:latest
+        readinessProbe:
+          periodSeconds: 5
+          failureThreshold: 10
+          httpGet:
+            port: 80
+            path: /
