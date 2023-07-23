@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alpine
+  labels:
+    name: alpine
+spec:
+  containers:
+  - name: alpine
+    image: alpine:latest
+    volumeMounts:
+      - name: mynfs
+        mountPath: /data
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
+  volumes:
+    - name: mynfs
+      nfs:
+        server: YOUR_NFS_SERVER
+        path: /nfs/direct
+        readOnly: false
