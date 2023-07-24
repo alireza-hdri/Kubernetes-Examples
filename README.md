@@ -8,10 +8,11 @@ This is a repo for some Kubernetes examples. All of this examples have been test
 Here is what we are going to see in the repositry !
 
 * [Kuberntes-Dashboard](Kubernetes-Dashboard)
-* [PV(C)-EXample](PV(C)-EXample)
-* [Secret And ConfigMap-Example](https://github.com/alireza-hdri/Kubernetes-Examples/tree/main/Secret%20And%20ConfigMap-Example)
 * [Simple-Pod](Simple-Pod)
 * [Simple-Resources](Simple-Resources)
+* [PV(C)-EXample](PV(C)-EXample)
+* [Secret And ConfigMap-Example](https://github.com/alireza-hdri/Kubernetes-Examples/tree/main/Secret%20And%20ConfigMap-Example)
 
-### Kubernetes-DAshboard
+
+### Kubernetes-Dashboard
 Simple and efficient GUI dashboard. It is strongly recommended to use this dashboard with the guide in this [link](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) .
