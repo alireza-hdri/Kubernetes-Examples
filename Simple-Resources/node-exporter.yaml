@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: node-exporter
-          image: prom/node-exporter:v1.2.2
+          image: prom/node-exporter:latest
           ports:
             - name: metrics
               containerPort: 9100
